@@ -1,0 +1,27 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"bio:pink_cherry_leaves": {
+		"sound": "grass",
+		"textures": "bio_pink_cherry_leaves"
+	},
+	"bio:white_cherry_leaves": {
+		"sound": "grass",
+		"textures": "bio_white_cherry_leaves"
+	},
+	"bio:pink_cherry_block": {
+		"sound": "grass",
+		"textures": "bio_pink_cherry_block"
+	},
+	"bio:white_cherry_block": {
+		"sound": "grass",
+		"textures": "bio_white_cherry_block"
+	},
+	"bio:red_bonnet": {
+		"sound": "grass",
+		"textures": "bio:red_bonnet"
+	}
+}

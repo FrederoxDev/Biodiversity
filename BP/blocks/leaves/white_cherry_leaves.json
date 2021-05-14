@@ -1,0 +1,57 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bio:white_cherry_leaves",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:geometry": "geometry.cube",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "bio_white_cherry_leaves",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:block_light_absorption": 0,
+      "minecraft:on_player_destroyed": {
+        "event": "destroyed",
+        "condition": "query.get_equipped_item_name == 'shears'"
+      },
+      "minecraft:loot": "loot_tables/broken_without_shears_white.json",
+      "minecraft:destroy_time": 0.3,
+      "minecraft:breathability": "air"
+    },
+    "events": {
+      "destroyed": {
+        "spawn_loot": {
+          "table": "loot_tables/leaves/white_with_shears.json"
+        }
+      }
+    }
+  }
+}

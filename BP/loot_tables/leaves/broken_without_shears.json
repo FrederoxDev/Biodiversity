@@ -1,0 +1,25 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 19
+                },
+                {
+                    "type": "item",
+                    "name": "bio:blossom_cherries",
+                    "count": 1,
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "bio:pink_blossom_sapling",
+                    "count": 1,
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

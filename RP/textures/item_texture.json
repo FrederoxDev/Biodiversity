@@ -1,0 +1,18 @@
+{
+	"resource_pack_name": "Biodiversity",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"bio_pink_blossom_sapling": {
+			"textures": "textures/items/saplings/pink_blossom_sapling"
+		},
+		"bio_white_blossom_sapling": {
+			"textures": "textures/items/saplings/white_blossom_sapling"
+		},
+		"bio_red_bonnet_item": {
+			"textures": "textures/items/flowers/red_bonnet_item"
+		},
+		"bio_blossom_cherries": {
+			"textures": "textures/items/foods/blossom_cherries"
+		}
+	}
+}

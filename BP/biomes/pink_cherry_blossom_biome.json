@@ -1,0 +1,53 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "pink_cherry_blossom_biome"
+		},
+		"components": {
+			"minecraft:overworld_height": {
+				"noise_type": "lowlands"
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:stone",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:climate": {
+				"downfall": 0.4,
+				"snow_accumulation": [
+					0.0,
+					0.0
+				],
+				"temperature": 0.8
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"medium",
+						2
+					],
+					[
+						"warm",
+						1
+					],
+					[
+						"cold",
+						1
+					]
+				]
+			},
+			"overworld": {},
+			"animals": {},
+			"pink_blossom": {},
+			"flower_forest": {},
+			"bamboo": {},
+			"cherry_bamboo": {},
+			"red_bonnet": {},
+			"bee_habitat": {}
+		}
+	}
+}

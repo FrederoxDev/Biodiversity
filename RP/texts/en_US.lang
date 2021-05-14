@@ -1,0 +1,11 @@
+pack.name=Biodiversity RP
+pack.description=https://discord.link/frederox
+tile.bio:pink_cherry_leaves.name=Pink Cherry Leaves
+tile.bio:white_cherry_leaves.name=White Cherry Leaves
+tile.bio:pink_cherry_block.name=Pink Blossom Sapling
+tile.bio:white_cherry_block.name=White Blossom Sapling
+item.bio:pink_blossom_sapling=Pink Blossom Sapling
+item.bio:white_blossom_sapling=White Blossom Sapling
+tile.bio:red_bonnet.name=Red Bonnet
+item.bio:red_bonnet_item=Red Bonnet
+item.bio:blossom_cherries=Blossom Cherries

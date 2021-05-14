@@ -1,0 +1,59 @@
+{
+  "format_version": "1.16.220",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bio:red_bonnet",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:geometry": "geometry.crop_model",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "bio_red_bonnet",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          -1,
+          0,
+          -1
+        ],
+        "size": [
+          0,
+          0,
+          0
+        ]
+      },
+      "minecraft:block_light_absorption": 0,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "minecraft:grass",
+              "minecraft:dirt"
+            ],
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      },
+      "minecraft:breathability": "air",
+      "minecraft:immovable": true,
+      "minecraft:loot": "loot_tables/red_bonnet.json"
+    }
+  }
+}

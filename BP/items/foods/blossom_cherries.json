@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "bio:blossom_cherries",
+      "category": "nature"
+    },
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:use_duration": 2,
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": "low"
+      },
+      "minecraft:icon": {
+        "texture": "bio_blossom_cherries"
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

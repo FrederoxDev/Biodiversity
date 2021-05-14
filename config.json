@@ -1,0 +1,25 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Biodiversity",
+	"namespace": "bio",
+	"author": "Frederox",
+	"targetVersion": "1.17.0",
+	"description": "",
+	"plugins": [
+		"comMojangRewrite",
+		{
+			"packName": "Biodiversity"
+		}
+	],
+	"capabilities": [],
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP",
+		"skinPack": "./SP",
+		"worldTemplate": "./WT"
+	},
+	"bridge": {
+		"darkTheme": "bridge.default.dark",
+		"lightTheme": "bridge.default.light"
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "bio:white_blossom_sapling",
+      "category": "nature"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "bio_white_blossom_sapling"
+      },
+      "minecraft:block_placer": {
+        "block": "bio:white_cherry_block"
+      }
+    }
+  }
+}

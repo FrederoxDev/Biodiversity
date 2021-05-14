@@ -1,0 +1,15 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "bio:pink_blossom_sapling",
+                    "count": 1,
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

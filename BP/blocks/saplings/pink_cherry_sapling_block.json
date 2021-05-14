@@ -1,0 +1,111 @@
+{
+  "format_version": "1.16.220",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bio:pink_cherry_block",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:geometry": "geometry.crop_model",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "bio_pink_cherry_block",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -7,
+          0,
+          -7
+        ],
+        "size": [
+          14,
+          14,
+          14
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          0,
+          0,
+          0
+        ]
+      },
+      "minecraft:block_light_absorption": 0,
+      "minecraft:loot": "loot_tables/leaves/pink_cherry_sapling.json",
+      "minecraft:random_ticking": {
+        "on_tick": {
+          "event": "grow"
+        }
+      },
+      "minecraft:on_interact": {
+        "event": "bonemeal",
+        "condition": "query.get_equipped_item_name == 'bone_meal'",
+        "target": "target"
+      },
+      "minecraft:immovable": true,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "minecraft:grass",
+              "minecraft:dirt"
+            ],
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      },
+      "minecraft:breathability": "air"
+    },
+    "events": {
+      "grow": {
+        "run_command": {
+          "command": [
+            "structure load mystructure:pink_cherry_tree ~-2 ~ ~-1"
+          ]
+        },
+        "set_block_at_pos": {
+          "block_type": "air"
+        }
+      },
+      "bonemeal": {
+        "randomize": [
+          {
+            "weight": 7,
+            "run_command": {
+              "command": [
+                "particle minecraft:crop_growth_emitter ~ ~ ~"
+              ]
+            },
+            "decrement_stack": {
+              "ignore_game_mode": true
+            }
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": [
+                "structure load mystructure:pink_cherry_tree ~-2 ~ ~-1",
+                "particle minecraft:crop_growth_emitter ~ ~ ~"
+              ]
+            },
+            "set_block_at_pos": {
+              "block_type": "air"
+            },
+            "decrement_stack": {
+              "ignore_game_mode": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

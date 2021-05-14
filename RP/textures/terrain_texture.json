@@ -1,0 +1,23 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Biodiversity",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"bio_pink_cherry_leaves": {
+			"textures": "textures/blocks/leaves/pink_cherry_leaves"
+		},
+		"bio_white_cherry_leaves": {
+			"textures": "textures/blocks/leaves/white_cherry_leaves"
+		},
+		"bio_pink_cherry_block": {
+			"textures": "textures/blocks/saplings/pink_cherry_block"
+		},
+		"bio_white_cherry_block": {
+			"textures": "textures/blocks/saplings/white_cherry_block"
+		},
+		"bio_red_bonnet": {
+			"textures": "textures/blocks/red_bonnet"
+		}
+	}
+}

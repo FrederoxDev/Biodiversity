@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.220",
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "bio:red_bonnet_scatter_feature"
+        },
+        "places_feature": "bio:red_bonnet_feature",
+        "iterations": 5,
+        "x": {
+            "distribution": "gaussian",
+            "extent": [
+                0,
+                15
+            ]
+        },
+        "y": 0,
+        "z": {
+            "distribution": "gaussian",
+            "extent": [
+                0,
+                15
+            ]
+        }
+    }
+}
