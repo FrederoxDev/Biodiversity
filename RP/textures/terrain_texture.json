@@ -18,6 +18,9 @@
 		},
 		"bio_red_bonnet": {
 			"textures": "textures/blocks/red_bonnet"
+		},
+		"bio_wisteria_leaves": {
+			"textures": "textures/blocks/leaves/wisteria_leaves"
 		}
 	}
 }

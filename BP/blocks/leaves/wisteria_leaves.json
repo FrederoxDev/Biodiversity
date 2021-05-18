@@ -1,0 +1,45 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bio:wisteria_leaves",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:geometry": "geometry.cube",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "bio_wisteria_leaves",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:block_light_absorption": 0,
+      "minecraft:destroy_time": 0.3,
+      "minecraft:breathability": "air",
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      }
+    }
+  }
+}
