@@ -28,21 +28,22 @@
 				"generate_for_climates": [
 					[
 						"medium",
-						2000
+						1
 					],
 					[
 						"warm",
-						2000
+						2
 					],
 					[
 						"cold",
-						2000
+						0
 					]
 				]
 			},
 			"overworld": {},
 			"animals": {},
-			"wisteria": {}
+			"wisteria": {},
+			"flower_forest": {}
 		}
 	}
 }

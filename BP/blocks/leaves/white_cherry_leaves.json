@@ -40,7 +40,7 @@
       "minecraft:block_light_absorption": 0,
       "minecraft:on_player_destroyed": {
         "event": "destroyed",
-        "condition": "query.get_equipped_item_name == 'shears'"
+        "condition": "query.get_equipped_item_name == 'shears' || query.get_equipped_item_name == 'reinforced_shears'"
       },
       "minecraft:loot": "loot_tables/broken_without_shears_white.json",
       "minecraft:destroy_time": 0.3,

@@ -20,6 +20,10 @@
 		"sound": "grass",
 		"textures": "bio_white_cherry_block"
 	},
+	"bio:wisteria_block": {
+		"sound": "grass",
+		"textures": "bio_wisteria_block"
+	},
 	"bio:red_bonnet": {
 		"sound": "grass",
 		"textures": "bio:red_bonnet"
