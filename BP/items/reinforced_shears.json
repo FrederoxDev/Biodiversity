@@ -42,6 +42,14 @@
 				]
 			},
 			"tag:minecraft:is_pickaxe": {}
+		},
+		"events": {
+			"dig": {
+				"damage": {
+					"type": "durability",
+					"amount": 1
+				}
+			}
 		}
 	}
 }

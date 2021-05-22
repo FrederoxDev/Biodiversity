@@ -10,6 +10,12 @@
                     "weight": 1
                 },
                 {
+                    "type": "item",
+                    "name": "bio:wisteria_sapling",
+                    "count": 1,
+                    "weight": 1
+                },
+                {
                     "type": "empty",
                     "weight": 19
                 }

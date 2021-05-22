@@ -2,8 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:block": {
     "description": {
-      "identifier": "bio:pink_cherry_leaves",
-      "is_experimental": false
+      "identifier": "bio:pink_cherry_leaves"
     },
     "components": {
       "minecraft:geometry": "geometry.cube",

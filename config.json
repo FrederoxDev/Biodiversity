@@ -3,7 +3,7 @@
 	"name": "Biodiversity",
 	"namespace": "bio",
 	"author": "Frederox",
-	"targetVersion": "1.17.0",
+	"targetVersion": "1.16.220",
 	"description": "",
 	"plugins": [
 		"comMojangRewrite",
