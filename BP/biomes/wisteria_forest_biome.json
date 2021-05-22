@@ -1,0 +1,49 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "wisteria_forest_biome"
+		},
+		"components": {
+			"minecraft:overworld_height": {
+				"noise_type": "less_extreme"
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:stone",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:climate": {
+				"downfall": 0.4,
+				"snow_accumulation": [
+					0.0,
+					0.0
+				],
+				"temperature": 0.8
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"medium",
+						1
+					],
+					[
+						"warm",
+						2
+					],
+					[
+						"cold",
+						0
+					]
+				]
+			},
+			"overworld": {},
+			"animals": {},
+			"wisteria": {},
+			"flower_forest": {}
+		}
+	}
+}

@@ -13,11 +13,17 @@
 		"bio_pink_cherry_block": {
 			"textures": "textures/blocks/saplings/pink_cherry_block"
 		},
+		"bio_wisteria_block": {
+			"textures": "textures/blocks/saplings/wisteria_block"
+		},
 		"bio_white_cherry_block": {
 			"textures": "textures/blocks/saplings/white_cherry_block"
 		},
 		"bio_red_bonnet": {
 			"textures": "textures/blocks/red_bonnet"
+		},
+		"bio_wisteria_leaves": {
+			"textures": "textures/blocks/leaves/wisteria_leaves"
 		}
 	}
 }

@@ -1,0 +1,23 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shaped": {
+"description": {
+  "identifier": "bio:reinforced_shears"
+  },
+"tags": [ "crafting_table" ],
+"pattern": [
+        " P",
+        "P" 
+        ],
+  "key": {
+    "P": {
+      "item": "minecraft:gold_ingot"
+    }
+    },
+"result": {
+    "item": "bio:reinforced_shears",
+    "data": 0,
+    "count": 1
+    }
+  }
+}

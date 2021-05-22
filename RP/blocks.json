@@ -12,6 +12,10 @@
 		"sound": "grass",
 		"textures": "bio_white_cherry_leaves"
 	},
+	"bio:wisteria_leaves": {
+		"sound": "grass",
+		"textures": "bio_wisteria_leaves"
+	},
 	"bio:pink_cherry_block": {
 		"sound": "grass",
 		"textures": "bio_pink_cherry_block"
@@ -19,6 +23,10 @@
 	"bio:white_cherry_block": {
 		"sound": "grass",
 		"textures": "bio_white_cherry_block"
+	},
+	"bio:wisteria_block": {
+		"sound": "grass",
+		"textures": "bio_wisteria_block"
 	},
 	"bio:red_bonnet": {
 		"sound": "grass",

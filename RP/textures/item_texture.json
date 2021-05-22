@@ -8,11 +8,17 @@
 		"bio_white_blossom_sapling": {
 			"textures": "textures/items/saplings/white_blossom_sapling"
 		},
+		"bio_wisteria_sapling": {
+			"textures": "textures/items/saplings/wisteria_sapling"
+		},
 		"bio_red_bonnet_item": {
 			"textures": "textures/items/flowers/red_bonnet_item"
 		},
 		"bio_blossom_cherries": {
 			"textures": "textures/items/foods/blossom_cherries"
+		},
+		"bio_reinforced_shears": {
+			"textures": "textures/items/reinforced_shears"
 		}
 	}
 }

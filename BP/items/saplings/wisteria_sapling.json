@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "bio:wisteria_sapling",
+      "category": "nature"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "bio_wisteria_sapling"
+      },
+      "minecraft:block_placer": {
+        "block": "bio:wisteria_block"
+      }
+    }
+  }
+}
