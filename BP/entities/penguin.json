@@ -1,0 +1,43 @@
+{
+    "format_version": "1.16.220",
+    "minecraft:entity": {
+        "description": { "identifier": "bio:penguin", "is_summonable": true, "is_spawnable": true },
+        "component_groups": {},
+        "components": {
+            // Properties
+            "minecraft:physics": { "has_gravity": true },
+            "minecraft:health": { "value": 10 },
+            "minecraft:attack": { "damage": 2 },
+            "minecraft:collision_box": { "height": 0.8, "width": 0.6 },
+            "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
+
+            // Movement
+            "minecraft:navigation.generic": { "avoid_damage_blocks": true, "can_swim": true, "is_amphibious": true, "can_sink": false },
+            "minecraft:movement.amphibious": { "max_turn": 30},
+
+            // Behaviours
+            "minecraft:behavior.look_at_player": {},
+            "minecraft:behavior.random_look_around": {},
+            "minecraft:behavior.panic": { "speed_multiplier": 1.4},
+            "minecraft:behavior.melee_attack": { "track_target": true, "priority": 6, "speed_multiplier": 1.2 },
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 6, "must_see": true, "reselect_targets": true, "within_radius": 25.0,
+                "entity_types": [{ "filters": { "any_of": [{ "test": "is_family", "subject": "other", "value": "fish" }]}}]
+            },
+
+            // Swimming
+            "minecraft:underwater_movement": { "value": 0.1 },
+            "minecraft:behavior.swim_idle": { "priority": 5, "idle_time": 8.0, "success_rate": 0.1 },
+            "minecraft:behavior.swim_wander": { "priority": 4, "interval": 0.1, "look_ahead": 2.0, "speed_multiplier": 1.0, "wander_time": 2.0 },
+            "minecraft:behavior.move_to_land": { "search_range": 25, "search_height": 3, "priority": 4 },
+
+            // Land
+            "minecraft:movement": { "value": 0.2 },
+            "minecraft:can_climb": {},
+            "minecraft:behavior.random_stroll": { "priority": 6, "speed_multiplier": 1.0 },
+            "minecraft:behavior.move_to_water": { "search_range": 25, "search_height": 3, "priority": 4 }
+
+        },
+        "events": {}
+    }
+}
