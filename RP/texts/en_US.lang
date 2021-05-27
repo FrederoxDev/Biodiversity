@@ -12,3 +12,5 @@ tile.bio:red_bonnet.name=Red Bonnet
 item.bio:red_bonnet_item=Red Bonnet
 item.bio:blossom_cherries=Blossom Cherries
 item.bio:reinforced_shears=Reinforced Shears
+entity.bio:penguin.name=Penguin
+item.spawn_egg.entity.bio:penguin.name=Spawn Penguin

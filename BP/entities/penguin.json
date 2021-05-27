@@ -24,12 +24,15 @@
                 "priority": 6, "must_see": true, "reselect_targets": true, "within_radius": 25.0,
                 "entity_types": [{ "filters": { "any_of": [{ "test": "is_family", "subject": "other", "value": "fish" }]}}]
             },
+            "minecraft:home": {},
+            "minecraft:behavior.go_home": { "priority": 3 },
+            "minecraft:behavior.beg": { "items": ["minecraft:salmon", "minecraft:tropical_fish", "minecraft:cod"] },
 
             // Swimming
             "minecraft:underwater_movement": { "value": 0.1 },
             "minecraft:behavior.swim_idle": { "priority": 5, "idle_time": 8.0, "success_rate": 0.1 },
             "minecraft:behavior.swim_wander": { "priority": 4, "interval": 0.1, "look_ahead": 2.0, "speed_multiplier": 1.0, "wander_time": 2.0 },
-            "minecraft:behavior.move_to_land": { "search_range": 25, "search_height": 3, "priority": 4 },
+            "minecraft:behavior.move_to_land": { "search_range": 50, "search_height": 3, "priority": 3 },
 
             // Land
             "minecraft:movement": { "value": 0.2 },

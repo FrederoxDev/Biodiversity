@@ -1,3 +1,15 @@
 {
-	"sound_definitions": {}
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"mob.penguin.squawk": {
+			"category": "neutral",
+			"max_distance": 20,
+			"sounds": [
+				{
+					"name": "sounds/mob/penguin_sound",
+					"stream": true
+				}
+			]
+		}
+	}
 }
