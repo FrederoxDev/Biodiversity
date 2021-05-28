@@ -7,10 +7,12 @@
                 "default": "entity"
             },
             "textures": {
-                "default": "textures/entity/penguin"
+                "default": "textures/entity/penguin",
+                "baby": "textures/entity/penguin_baby"
             },
             "geometry": {
-                "default": "geometry.penguin"
+                "default": "geometry.penguin",
+                "baby": "geometry.penguin"
             },
             "render_controllers": [
                 "controller.render.penguin"
