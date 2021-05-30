@@ -14,7 +14,7 @@
             "minecraft:physics": { "has_gravity": true },
             "minecraft:health": { "value": 10 },
             "minecraft:attack": { "damage": 2 },
-            "minecraft:collision_box": { "height": 0.8, "width": 0.6 },
+            "minecraft:collision_box": { "height": 0.942, "width": 0.4 },
             "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
 
             // Movement
@@ -51,7 +51,7 @@
             "minecraft:entity_spawned": {
                 "randomize": [
                 {
-                    "weight": 5,
+                    "weight": 20,
                     "trigger": "minecraft:spawn_adult"
                 },
                 {
