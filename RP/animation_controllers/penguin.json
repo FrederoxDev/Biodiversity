@@ -1,0 +1,49 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.penguin": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "waddle": "query.is_moving && !query.is_in_water"
+                        },
+                        {
+                            "swim": "query.is_moving && query.is_in_water"
+                        }
+                    ]
+                },
+                "waddle": {
+                    "animations": [
+                        "waddle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_moving"
+                        },
+                        {
+                            "swim": "query.is_moving && query.is_in_water"
+                        }
+                    ]
+                },
+                "swim": {
+                    "animations": [
+                        "swim"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_moving && !query.is_in_water"
+                        },
+                        {
+                            "waddle": "query.is_moving && !query.is_in_water"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

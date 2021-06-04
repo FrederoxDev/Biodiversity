@@ -1,0 +1,36 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bio:penguin",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/penguin",
+                "baby": "textures/entity/penguin_baby"
+            },
+            "geometry": {
+                "default": "geometry.penguin",
+                "baby": "geometry.penguin"
+            },
+            "render_controllers": [
+                "controller.render.penguin"
+            ],
+            "spawn_egg": {
+                "base_color": "#000000",
+                "overlay_color": "#ffffff"
+            },
+            "animations": {
+                "idle": "animation.penguin.idle",
+                "waddle": "animation.penguin.waddle",
+                "swim": "animation.penguin.swim"
+            },
+            "animation_controllers": [
+                {
+                    "always": "controller.animation.penguin"
+                }
+            ]
+        }
+    }
+}
