@@ -6,13 +6,24 @@
             "bio:penguin_baby": {
                 "minecraft:is_baby": {},
                 "minecraft:scale": { "value": 0.7 },
-                "minecraft:behavior.follow_parent": { "priority": 6, "speed_multiplier": 1.1}
+                "minecraft:behavior.follow_parent": { "priority": 6, "speed_multiplier": 1.1},
+                "minecraft:health": { "value": 5 },
+                "minecraft:ageable": {
+                    "duration": 1200,
+                    "feed_items": ["minecraft:salmon", "minecraft:tropical_fish", "minecraft:cod"],
+                    "grow_up": { "event": "bio:grow_up" }
+                }
+            },
+            "bio:penguin_adult":{
+                "minecraft:health": { "value": 10 },
+                "minecraft:loot": { "table": "loot_tables/penguin.json" },
+                "minecraft:behavior.beg": { "items": ["minecraft:salmon", "minecraft:tropical_fish", "minecraft:cod"] },
+                "minecraft:behavior.breed": {"priority": 10}
             }
         },
         "components": {
             // Properties
             "minecraft:physics": { "has_gravity": true },
-            "minecraft:health": { "value": 10 },
             "minecraft:attack": { "damage": 2 },
             "minecraft:collision_box": { "height": 0.942, "width": 0.4 },
             "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
@@ -32,7 +43,6 @@
             },
             "minecraft:home": {},
             "minecraft:behavior.go_home": { "priority": 3 },
-            "minecraft:behavior.beg": { "items": ["minecraft:salmon", "minecraft:tropical_fish", "minecraft:cod"] },
 
             // Swimming
             "minecraft:underwater_movement": { "value": 0.1 },
@@ -52,13 +62,18 @@
                 "randomize": [
                 {
                     "weight": 20,
-                    "trigger": "minecraft:spawn_adult"
+                    "trigger": "minecraft:spawn_adult",
+                    "add": { "component_groups": [ "bio:penguin_adult" ]}
                 },
                 {
                     "weight": 5,
                     "add": { "component_groups": [ "bio:penguin_baby" ] }
                 }
-            ]}
+            ]},
+            "bio:grow_up": {
+                "add": { "component_groups": [ "bio:penguin_adult" ]},
+                "remove": { "component_groups": [ "bio:penguin_baby" ]}
+            }
         }
     }
 }

@@ -1,0 +1,31 @@
+{
+    "pools": [
+        {
+            "rolls": 4,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "fish",
+                    "count": 1,
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "salmon",
+                    "count": 1,
+                    "weight": 1
+                },
+                {
+                    "type": "empty",
+                    "weight": 2
+                },
+                {
+                    "type": "item",
+                    "name": "feather",
+                    "count": 1,
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

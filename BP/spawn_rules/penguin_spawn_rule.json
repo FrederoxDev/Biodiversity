@@ -7,8 +7,8 @@
         },
         "conditions": [{
             "minecraft:spawns_on_surface": {},
-            "minecraft:weight": {"default": 100},
-            "minecraft:herd": { "min_size": 5, "max_size": 10 },
+            "minecraft:weight": {"default": 40},
+            "minecraft:herd": { "min_size": 10, "max_size": 20 },
             "minecraft:biome_filter": {
                 "any_of": [
                     { "test": "has_biome_tag", "operator": "==", "value": "ice" },
