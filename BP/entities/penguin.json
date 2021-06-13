@@ -27,6 +27,7 @@
             "minecraft:attack": { "damage": 2 },
             "minecraft:collision_box": { "height": 0.942, "width": 0.4 },
             "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
+            "minecraft:leashable": { "soft_distance": 4.0, "hard_distance": 6.0, "max_distance": 10.0 },
 
             // Movement
             "minecraft:navigation.generic": { "avoid_damage_blocks": true, "can_swim": true, "is_amphibious": true, "can_sink": false },
